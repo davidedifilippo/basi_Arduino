@@ -19,7 +19,7 @@ la varabile currentTime deve essere dichiarata di tipo unsigned long:
 Dichiaro le variabili necessarie:
 
     bool ledState = false;
-    unsigned long previousTime;
+    unsigned long previousTime = 0;
     unsigned long interval = 1000;  
     
 ## Fase di setup 
