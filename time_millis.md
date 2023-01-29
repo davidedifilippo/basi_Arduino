@@ -1,6 +1,8 @@
 ## La funzione millis()
 
-Restituisce il numero di millisecondi da quando la scheda Arduino ha avviato il programma corrente. Questo numero andrà in overflow (tornerà a zero) dopo circa 50 giorni.
+Restituisce il numero di millisecondi da quando la scheda Arduino ha avviato il programma corrente. Questo numero andrà in overflow (tornerà a zero) dopo circa 50 giorni dato che utilizza un tipo di dato a 32bit ossia 4Byte senza segno per memorizzare i millisecondi:
+
+    (2^32-1) millisecodi = 2^32/(1000*60sec*60min*24ore) = 49.71 giorni 
 
 
 currentTime = millis()
