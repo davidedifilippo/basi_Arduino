@@ -22,11 +22,14 @@ Dichiaro le variabili necessarie:
     unsigned long previousTime = 0;
     unsigned long interval = 1000;  
     
+    // pin di controllo del LED
+    const int ledPin = 2;
+    
 ## Fase di setup 
 
 impostare il piedino 2 come uscita, in modo da poter alimentare il led:
 
-    pinMode(2, OUTPUT);
+    pinMode(ledPin, OUTPUT);
    
 Si attiva la porta di comunicazione seriale per il debug dell'applicazione:
 
